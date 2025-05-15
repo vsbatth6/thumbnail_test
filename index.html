@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Youtube Thumbnail Download</title>
+</head>
+<body>
+	<div class="ad-top">
+		<p>Advertisement Top Space</p>
+	</div>
+
+	<div class="main-container">
+		<div class="ad-side ad-left">
+			<p>Advertisement</p>
+		</div>
+
+		<div class="form-container">
+			<div class="form-group">
+				<label for="videoUrl">Enter Youtube Video URL</label>
+				<input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=xxxxxxxxxxx">
+			</div>
+
+			<button id="extractBtn">Get Thumbnail</button>
+
+			<div id="error" class="error">Please enter a valid YouTube URL</div>
+
+			<div id="result" class="result">
+				<h2>Thumbnail Preview</h2>
+				<img id="thumbnail" class="thumbnail" src="" alt="YouTube Thumbnail">
+				<div>
+					<p>Video ID: <span id="videoId"></span></p>
+					<p>Resolution: <span id="resolution">1280x720</span></p>
+					<button id="downloadBtn" class="downloadBtn">Download Thumbnail</button>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="ad-side ad-right">
+			<p>Advertisement</p>
+		</div>
+	</div>
+	
+	<div class="ad-bottom">
+		<p>Advertisement Bottom Space</p>
+	</div>
+
+	<footer>
+        <p>&copy; 2025 YouTube Thumbnail Downloader. All rights reserved.</p>
+    </footer>
+</body>
+</html>
